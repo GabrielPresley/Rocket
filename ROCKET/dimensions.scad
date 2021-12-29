@@ -7,14 +7,14 @@ motor_r = 29/2; //mm
 motor_l = 156; //mm
 
 //ENGINE BAY
-engineHousingOD = 18.7; //mm
-engineHousingID = 18.0; //mm
-engineHousingLength = 69.8; //mm
+engineHousingOD = 30; //mm
+engineHousingID = 29.2; //mm
+engineHousingLength = 156; //mm
 
 //MAIN BODY
-mainHousing_l = 457; //mm
-mainHousing_r = 25/2; //mm
-mainHousing_ri = 24/2; //mm
+mainHousing_l = 500; //mm
+mainHousing_r = 36/2; //mm
+mainHousing_ri = 35/2; //mm
 
 //MAIN FINS
 finRoot = 50.8; //mm

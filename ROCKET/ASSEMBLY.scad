@@ -3,34 +3,34 @@ difference(){
 	union(){
 		//Assembly
 		include<dimensions.scad>;
-		import("engineBay.stl");
+		import("STL/engineBay.stl");
 		for ( i = [0:360/finCount:360]){
 			rotate([0,0,i]){
 				translate([finThickness/2,-mainHousing_r,0]){
 					rotate([0,-90,0]){
-						import("fins.stl");
+						import("STL/fins.stl");
 					}
 				}
 			}
 		}
-		import("rings.stl");
+		import("STL/rings.stl");
 		translate([0,0,finRoot]){
-			import("rings.stl");
+			import("STL/rings.stl");
 		}
 		rotate([0,0,(360/finCount)/2])
-		import("mainBody.stl");
+		import("STL/mainBody.stl");
 
 		for ( i = [0:360/subCount:360]){
 			rotate([0,0,i]){
 				translate([subThickness/2,-mainHousing_r,subPosition+subRoot]){
 					rotate([0,90,0]){
-						import("subFins.stl");
+						import("STL/subFins.stl");
 					}
 				}
 			}
 		}
 		translate([0,0,mainHousing_l]){
-			import("noseCone.stl");
+			import("STL/noseCone.stl");
 		}
 	}
 	cube([1000,1000,1000]);
